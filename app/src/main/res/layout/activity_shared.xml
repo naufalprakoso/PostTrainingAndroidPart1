@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".SharedActivity"
+	android:padding="16dp">
+
+	<LinearLayout
+		android:id="@+id/layout_login"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_gravity="center"
+		android:gravity="center">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Login Page"
+			android:textSize="22sp"
+			android:textStyle="bold"/>
+
+		<EditText
+			android:id="@+id/edt_username"
+			android:layout_marginTop="16dp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="16dp"
+			android:hint="Enter your username..."/>
+
+		<Button
+			android:id="@+id/btn_login"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Login"
+			android:textColor="@android:color/white"
+			android:backgroundTint="@color/colorAccent"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:visibility="gone"
+		android:id="@+id/layout_logged"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_gravity="center"
+		android:gravity="center">
+
+		<TextView
+			android:id="@+id/txt_username"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="22sp"
+			android:text="Your username is "/>
+
+		<Button
+			android:id="@+id/btn_logout"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Logout"
+			android:textColor="@android:color/white"
+			android:layout_marginTop="16dp"
+			android:backgroundTint="@color/colorAccent"
+			/>
+
+	</LinearLayout>
+
+</FrameLayout>

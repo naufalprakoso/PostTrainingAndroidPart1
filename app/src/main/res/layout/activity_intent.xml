@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	android:orientation="vertical"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".IntentActivity"
+	android:padding="16dp"
+	android:gravity="center">
+
+	<Button
+		android:id="@+id/btn_call"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Telfon Mama"/>
+
+	<Button
+		android:id="@+id/btn_website"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Website Dicoding"/>
+
+</LinearLayout>

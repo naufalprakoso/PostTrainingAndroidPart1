@@ -1,0 +1,10 @@
+<resources>
+	<string name="app_name">Post Training Android Part 1</string>
+
+	<string-array name="category_array">
+		<item>Choose category</item>
+		<item>Personal</item>
+		<item>Team</item>
+		<item>Company</item>
+	</string-array>
+</resources>
