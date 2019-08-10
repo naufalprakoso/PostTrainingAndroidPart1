@@ -14,6 +14,7 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
+import android.widget.TimePicker;
 import android.widget.Toast;
 
 import java.text.SimpleDateFormat;
@@ -67,19 +68,25 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                 final String time = edtTime.getText().toString();
                 final String category = spinnerCategory.getSelectedItem().toString();
 
-                if (name.isEmpty()){
+                if (name.isEmpty()) {
                     toast("Name must be filled!");
-                }else if(isGenderChecked){
+                }
+                else if (isGenderChecked) {
                     toast("Gender must be selected");
-                }else if(!isAgreeChecked){
+                }
+                else if (!isAgreeChecked) {
                     toast("You must agree");
-                }else if (birthDate.isEmpty()){
+                }
+                else if (birthDate.isEmpty()) {
                     toast("Birth date must be chosen");
-                }else if(time.isEmpty()){
+                }
+                else if (time.isEmpty()) {
                     toast("Time must be chosen");
-                }else if(category.equals("Choose category")){
+                }
+                else if (category.equals("Choose category")) {
                     toast("Category must be chosen");
-                }else{
+                }
+                else {
                     toast("Success");
                 }
 
@@ -93,7 +100,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         }
     }
 
-    private void toast(String text){
+    private void toast(String text) {
         Toast.makeText(this, text, Toast.LENGTH_SHORT).show();
     }
 
@@ -103,23 +110,20 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                 R.style.DialogTheme,
                 new DatePickerDialog.OnDateSetListener() {
                     @Override
-                    public void onDateSet(DatePicker datePicker, int year, int month, int dayOfMonth) {
-                        calendar.set(Calendar.YEAR, year);
-                        calendar.set(Calendar.MONTH, month);
-                        calendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
+                    public void onDateSet(DatePicker datePicker, int i, int i1, int i2) {
+                        calendar.set(Calendar.YEAR, i);
+                        calendar.set(Calendar.MONTH, i1);
+                        calendar.set(Calendar.DAY_OF_MONTH, i2);
 
                         String dateFormat = "dd/MM/yy";
                         SimpleDateFormat simpleDateFormat = new SimpleDateFormat(dateFormat, Locale.US);
-
                         edtDate.setText(simpleDateFormat.format(calendar.getTime()));
                     }
                 },
-                2018,
+                1999,
                 1,
                 1
         );
-
-        datePickerDialog.show();
     }
 
     private void showTimeDialog() {
@@ -128,9 +132,8 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                 R.style.DialogTheme,
                 new TimePickerDialog.OnTimeSetListener() {
                     @Override
-                    public void onTimeSet(android.widget.TimePicker view,
-                                          int hourOfDay, int minute) {
-                        edtTime.setText(hourOfDay + ":" + minute);
+                    public void onTimeSet(TimePicker timePicker, int i, int i1) {
+                        edtTime.setText(i + ":" + i1);
                     }
                 },
                 calendar.get(Calendar.HOUR_OF_DAY),
