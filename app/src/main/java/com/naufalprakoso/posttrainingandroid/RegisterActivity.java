@@ -124,6 +124,8 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                 1,
                 1
         );
+
+        datePickerDialog.show();
     }
 
     private void showTimeDialog() {
