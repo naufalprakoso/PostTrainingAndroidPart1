@@ -5,38 +5,38 @@ Post Training Android Part 1
 - Folder Structure
 - Emulator
 - Activity
--- Lifecycle
+- - Lifecycle
 - Event Handling
--- Listener
--- Implement
+- - Listener
+- - Implement
 - Intent
--- Explicit
--- Implicit
--- Extra
--- Parcelable
+- - Explicit
+- - Implicit
+- - Extra
+- - Parcelable
 - Menu, Themes, and Settings
--- Strings
--- Styles
--- Dimensions
+- - Strings
+- - Styles
+- - Dimensions
 - Basic Components
--- TextView
--- EditText
--- TimePicker
--- DatePicker
--- CheckBox
--- ProgressBar
--- Spinner
--- RatingBar
--- RadioButton | RadioGroup
--- Button
--- ImageView
+- - TextView
+- - EditText
+- - TimePicker
+- - DatePicker
+- - CheckBox
+- - ProgressBar
+- - Spinner
+- - RatingBar
+- - RadioButton | RadioGroup
+- - Button
+- - ImageView
 - Layout
--- RelativeLayout
--- FrameLayout
--- LinearLayout
--- ConstraintLayout
--- ScrollView
+- - RelativeLayout
+- - FrameLayout
+- - LinearLayout
+- - ConstraintLayout
+- - ScrollView
 - Debugging
--- Log
+- - Log
 - SharedPreferences
 - AndroidManifest
