@@ -1,0 +1,42 @@
+# PostTrainingAndroidPart 1
+Post Training Android Part 1
+
+## Outline
+- Folder Structure
+- Emulator
+- Activity
+-- Lifecycle
+- Event Handling
+-- Listener
+-- Implement
+- Intent
+-- Explicit
+-- Implicit
+-- Extra
+-- Parcelable
+- Menu, Themes, and Settings
+-- Strings
+-- Styles
+-- Dimensions
+- Basic Components
+-- TextView
+-- EditText
+-- TimePicker
+-- DatePicker
+-- CheckBox
+-- ProgressBar
+-- Spinner
+-- RatingBar
+-- RadioButton | RadioGroup
+-- Button
+-- ImageView
+- Layout
+-- RelativeLayout
+-- FrameLayout
+-- LinearLayout
+-- ConstraintLayout
+-- ScrollView
+- Debugging
+-- Log
+- SharedPreferences
+- AndroidManifest
