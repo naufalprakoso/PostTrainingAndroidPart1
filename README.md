@@ -6,18 +6,12 @@ Post Training Android Part 1
 - Emulator
 - Activity
   - Lifecycle
-- Event Handling
-  - Listener
-  - Implement
-- Intent
-  - Explicit
-  - Implicit
-  - Extra
-  - Parcelable
-- Menu, Themes, and Settings
-  - Strings
-  - Styles
-  - Dimensions
+- Layout
+  - RelativeLayout
+  - FrameLayout
+  - LinearLayout
+  - ConstraintLayout
+  - ScrollView
 - Basic Components
   - TextView
   - EditText
@@ -30,13 +24,19 @@ Post Training Android Part 1
   - RadioButton | RadioGroup
   - Button
   - ImageView
-- Layout
-  - RelativeLayout
-  - FrameLayout
-  - LinearLayout
-  - ConstraintLayout
-  - ScrollView
+- Event Handling
+  - Listener
+  - Implement
 - Debugging
   - Log
+- Intent
+  - Explicit
+  - Implicit
+  - Extra
+  - Parcelable
 - SharedPreferences
+- Menu, Themes, and Settings
+  - Strings
+  - Styles
+  - Dimensions
 - AndroidManifest
